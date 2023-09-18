@@ -1,11 +1,11 @@
 import './App.css';
 import Expenses from './components/Expenses/Expenses';
+import Concept from './components/concepts/Concept';
 
 import componentsImage from './assets/images/components.png';
 import stateImage from './assets/images/state.png';
 import eventsImage from './assets/images/events.png';
 
-import Header from './components/concepts/Header';
 
 function App() {
   const expenses = [
@@ -62,25 +62,7 @@ function App() {
    <div>
       <h2>Section-4 Tutorial 58 Done</h2>
       <Expenses items={expenses} />
-      <Header />
-      <ul id="concepts">
-        <li className="concept">
-          <img src={concepts[0].image} alt={concepts[0].title} />
-          <h2>{concepts[0].title}</h2>
-          <p>{concepts[0].description}</p>
-        </li>
-        <li className="concept">
-          <img src={concepts[1].image} alt={concepts[1].title} />
-          <h2>{concepts[1].title}</h2>
-          <p>{concepts[1].description}</p>
-        </li>
-        <li className="concept">
-          <img src={concepts[2].image} alt={concepts[2].title} />
-          <h2>{concepts[2].title}</h2>
-          <p>{concepts[2].description}</p>
-        </li>
-      </ul>
-
+      <Concept concepts={concepts} />
    </div>
   );
 }
