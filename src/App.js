@@ -1,5 +1,6 @@
 import './App.css';
 import Expenses from './components/Expenses/Expenses';
+import ExpenseForm from './components/ExpenseForm/NewExpense'; 
 import Concept from './components/concepts/Concept';
 
 import componentsImage from './assets/images/components.png';
@@ -60,7 +61,8 @@ function App() {
 
   return (
    <div>
-      <h2>Section-4 Tutorial 58 Done</h2>
+      <h2>Section-5 Lecture-74 Done</h2>
+      <ExpenseForm />
       <Expenses items={expenses} />
       <Concept concepts={concepts} />
    </div>
