@@ -61,7 +61,7 @@ function App() {
 
   return (
    <div>
-      <h2>Section-5 Lecture-74 Done</h2>
+      <h2>Section-5 Lecture-76 Done</h2>
       <ExpenseForm />
       <Expenses items={expenses} />
       <Concept concepts={concepts} />
