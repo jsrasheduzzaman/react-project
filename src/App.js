@@ -59,10 +59,16 @@ function App() {
 ];
 
 
+const AddExpenseHandler = expense => {
+  console.log('In app.js');
+  console.log(expense);
+}
+
+
   return (
    <div>
-      <h2>Section-5 Lecture-76 Done</h2>
-      <ExpenseForm />
+      <h2>Section-5 Lecture-80 Done</h2>
+      <ExpenseForm onAddExpense={AddExpenseHandler} />
       <Expenses items={expenses} />
       <Concept concepts={concepts} />
    </div>
