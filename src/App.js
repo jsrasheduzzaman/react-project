@@ -1,15 +1,14 @@
 import './App.css';
 import Expenses from './components/Expenses/Expenses';
 import ExpenseForm from './components/ExpenseForm/NewExpense'; 
+import React, {useState} from 'react';
 import Concept from './components/concepts/Concept';
 
 import componentsImage from './assets/images/components.png';
 import stateImage from './assets/images/state.png';
 import eventsImage from './assets/images/events.png';
 
-
-function App() {
-  const expenses = [
+  const DUMMY_EXPENSES = [
     {
       id:'e1',
       title:'Toilet Paper',
@@ -37,6 +36,9 @@ function App() {
   ];
 
 
+
+function App() {
+
   const concepts = [
   {
     title: 'Components',
@@ -59,15 +61,19 @@ function App() {
 ];
 
 
+
+const [expenses, setExpense] = useState(DUMMY_EXPENSES);
+
 const AddExpenseHandler = expense => {
-  console.log('In app.js');
-  console.log(expense);
+  setExpense(dummyExpense => {
+    return [expense, ...dummyExpense];
+  });
 }
 
 
   return (
    <div>
-      <h2>Section-5 Lecture-80 Done</h2>
+      <h2>Section-6 Tutorial 88 Done</h2>
       <ExpenseForm onAddExpense={AddExpenseHandler} />
       <Expenses items={expenses} />
       <Concept concepts={concepts} />
