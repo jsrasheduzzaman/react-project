@@ -73,7 +73,7 @@ const AddExpenseHandler = expense => {
 
   return (
    <div>
-      <h2>Section-6 Tutorial 88 Done</h2>
+      <h2>Section-6 Tutorial 90 Done</h2>
       <ExpenseForm onAddExpense={AddExpenseHandler} />
       <Expenses items={expenses} />
       <Concept concepts={concepts} />
